@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #FBF8F2;
+    --color-paper: #FCFAF6;
+    --color-gold: #C5A059;
+    --color-gold-light: #EBDDC3;
+    --color-gold-dark: #9C7A3C;
+    --color-brown: #736353;
+    --color-brown-dark: #4A3E31;
+    --color-taupe-light: #9E9080;
+    --color-border: #EFE7DA;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "liga" 1;
+  }
+
+  body {
+    background-color: #FBF8F2;
+    color: #736353;
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Typography Utilities */
+.font-display {
+  font-family: 'Italiana', 'Cinzel Decorative', 'Bodoni Moda', 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Alex Brush', 'Parisienne', 'Allura', 'Pinyon Script', 'Great Vibes', cursive;
+}
+
+.font-script-quote {
+  font-family: 'Pinyon Script', 'Alex Brush', 'Allura', cursive;
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  direction: rtl;
+}
+
+.font-caps {
+  font-family: 'Montserrat', 'Cinzel', 'Tenor Sans', sans-serif;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Luxury Paper Texture Background matching the reference */
+.paper-texture {
+  background-color: #FBF8F2;
+  background-image: 
+    radial-gradient(#dcd0bd 0.45px, transparent 0.45px),
+    radial-gradient(#eee4d4 0.45px, #FBF8F2 0.45px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+/* Card Surface Texture */
+.card-paper-bg {
+  background: #FCFAF7;
+  background-image: 
+    radial-gradient(ellipse at top, rgba(248, 241, 230, 0.6) 0%, rgba(252, 250, 247, 0) 70%),
+    radial-gradient(#e4d8c7 0.5px, transparent 0.5px);
+  background-size: 100% 100%, 24px 24px;
+}
+
+/* Delicate Gold Accents & Shimmer */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #A87E38 0%, #C5A059 45%, #E2CD9C 75%, #B38942 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle float animation for ambient bubbles */
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+}
+
+.animate-subtle-float {
+  animation: subtle-float 9s ease-in-out infinite;
+}
+
+/* Custom Scrollbar for Luxury Aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF8F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFD2BC;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CBB99F;
+}
