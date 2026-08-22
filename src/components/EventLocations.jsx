@@ -26,7 +26,7 @@ export default function EventLocations() {
           </h3>
 
           <p className="font-editorial text-xs sm:text-sm text-[#7F705F] mb-4 font-light">
-            Thaqwa Masjid, Varam · Nikah, July 29
+            Thaqwa Masjid, Varam · Nikah, September 1
           </p>
 
           <a
@@ -59,7 +59,7 @@ export default function EventLocations() {
           </h3>
 
           <p className="font-editorial text-xs sm:text-sm text-[#7F705F] mb-4 font-light">
-            Groom&apos;s House · Reception, July 29 - 30
+            Groom&apos;s House · Reception, September 2
           </p>
 
           <a

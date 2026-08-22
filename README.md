@@ -1,4 +1,4 @@
-﻿# Suhail & Nabeela Wedding Invitation
+# Shuhair & Hadiya Wedding Invitation
 
 An elegant, interactive wedding invitation built with React and Vite. The experience opens with a draggable couple introduction and then transitions into a detailed invitation page with event information, map links, calendar actions, and a music toggle.
 
@@ -76,7 +76,7 @@ Wedding details, venue links, and the music file path are defined in:
 
 The music player expects an audio file at:
 
-- `/audio/wedding.mp3`
+- `src/assets/music/SueLius-WeddingNasheeda-MP3-128kbps.mp3`
 
 If you want background music to play from a file, place the audio asset in the app's public asset path so it can be served at that URL.
 
@@ -84,7 +84,7 @@ If you want background music to play from a file, place the audio asset in the a
 
 - The invitation is intentionally content-driven and does not require a backend.
 - The project includes a few AI Studio starter dependencies in `package.json`, but the live app itself is frontend-only.
-- The wedding date data is currently set to July 29-30, 2026.
+- The wedding date data is currently set to September 1-2, 2026.
 
 ## License
 

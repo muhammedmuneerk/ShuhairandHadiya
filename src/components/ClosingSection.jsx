@@ -55,7 +55,7 @@ export default function ClosingSection({ onStartOver }) {
           </p>
 
           <h2 className="font-display text-2xl sm:text-3xl text-[#C5A059] tracking-normal pt-1 font-normal">
-            Suhail &amp; Nabeela
+            Shuhair &amp; Hadiya
           </h2>
         </div>
 

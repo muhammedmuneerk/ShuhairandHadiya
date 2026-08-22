@@ -14,15 +14,15 @@ export default function SaveTheDate() {
     let details = "";
 
     if (event === "nikah") {
-      title = encodeURIComponent("Nikah — Suhail & Nabeela");
-      dates = "20260729T113000Z/20260729T143000Z"; // After Asar (approx 4 PM IST = 11:30 AM UTC)
+            title = encodeURIComponent("Nikah — Shuhair & Hadiya");
+      dates = "20260901/20260902"; // All-day event because the exact after-Asar time is not specified.
       location = encodeURIComponent(WEDDING_DETAILS.dates.nikah.venue);
-      details = encodeURIComponent("Nikah ceremony of Muhammed Suhail & Nabeela Musthafa at Thaqwa Masjid, Varam.");
+      details = encodeURIComponent("Nikah ceremony of Muhammed Shuhair & Hadiya Bayan at Thaqwa Masjid, Varam.");
     } else {
-      title = encodeURIComponent("Wedding Reception — Suhail & Nabeela");
-      dates = "20260730T053000Z/20260730T153000Z";
+            title = encodeURIComponent("Wedding Reception — Shuhair & Hadiya");
+      dates = "20260902/20260903";
       location = encodeURIComponent(WEDDING_DETAILS.dates.reception.venue);
-      details = encodeURIComponent("Wedding Reception celebration of Muhammed Suhail & Nabeela Musthafa at Groom's House.");
+      details = encodeURIComponent("Wedding Reception celebration of Muhammed Shuhair & Hadiya Bayan at Groom's House.");
     }
 
     return `${baseUrl}&text=${title}&dates=${dates}&location=${location}&details=${details}`;
@@ -33,26 +33,26 @@ export default function SaveTheDate() {
     const icsContent = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//Suhail & Nabeela Wedding//EN",
+      "PRODID:-//Shuhair & Hadiya Wedding//EN",
       "CALSCALE:GREGORIAN",
       "METHOD:PUBLISH",
       "BEGIN:VEVENT",
-      "UID:nikah-suhail-nabeela-20260729@wedding",
-      "DTSTAMP:20260729T000000Z",
-      "DTSTART:20260729T113000Z",
-      "DTEND:20260729T143000Z",
-      "SUMMARY:Nikah — Muhammed Suhail & Nabeela Musthafa",
-      "DESCRIPTION:Nikah Ceremony of Muhammed Suhail & Nabeela Musthafa (After Asar)",
+      "UID:nikah-shuhair-hadiya-20260901@wedding",
+      "DTSTAMP:20260901T000000Z",
+      "DTSTART;VALUE=DATE:20260901",
+      "DTEND;VALUE=DATE:20260902",
+      "SUMMARY:Nikah — Muhammed Shuhair & Hadiya Bayan",
+      "DESCRIPTION:Nikah Ceremony of Muhammed Shuhair & Hadiya Bayan (After Asar)",
       "LOCATION:Thaqwa Masjid\\, Varam",
       "STATUS:CONFIRMED",
       "END:VEVENT",
       "BEGIN:VEVENT",
-      "UID:reception-suhail-nabeela-20260730@wedding",
-      "DTSTAMP:20260730T000000Z",
-      "DTSTART:20260730T053000Z",
-      "DTEND:20260730T153000Z",
-      "SUMMARY:Wedding Reception — Muhammed Suhail & Nabeela Musthafa",
-      "DESCRIPTION:Wedding Reception of Muhammed Suhail & Nabeela Musthafa",
+      "UID:reception-shuhair-hadiya-20260902@wedding",
+      "DTSTAMP:20260902T000000Z",
+      "DTSTART;VALUE=DATE:20260902",
+      "DTEND;VALUE=DATE:20260903",
+      "SUMMARY:Wedding Reception — Muhammed Shuhair & Hadiya Bayan",
+      "DESCRIPTION:Wedding Reception of Muhammed Shuhair & Hadiya Bayan",
       "LOCATION:Groom\\'s House\\, Varam",
       "STATUS:CONFIRMED",
       "END:VEVENT",
@@ -63,7 +63,7 @@ export default function SaveTheDate() {
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.setAttribute("download", "Suhail-and-Nabeela-Wedding.ics");
+    link.setAttribute("download", "Shuhair-and-Hadiya-Wedding.ics");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

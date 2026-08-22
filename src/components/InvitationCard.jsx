@@ -57,13 +57,13 @@ export default function InvitationCard() {
           {/* Main Couple Names */}
           <div className="py-1 space-y-0.5">
             <h2 className="font-display text-3xl sm:text-4xl md:text-[42px] text-[#C29F59] tracking-normal leading-tight font-normal">
-              Muhammed Suhail
+              Muhammed Shuhair
             </h2>
             <div className="font-display text-2xl sm:text-3xl text-[#C29F59] my-0.5">
               &amp;
             </div>
             <h2 className="font-display text-3xl sm:text-4xl md:text-[42px] text-[#C29F59] tracking-normal leading-tight font-normal">
-              Nabeela Musthafa
+              Hadiya Bayan
             </h2>
           </div>
 
