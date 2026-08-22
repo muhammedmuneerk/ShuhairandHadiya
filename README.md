@@ -2,6 +2,10 @@
 
 An elegant, interactive wedding invitation built with React and Vite. The experience opens with a draggable couple introduction and then transitions into a detailed invitation page with event information, map links, calendar actions, and a music toggle.
 
+## Preview
+
+![Shuhair and Hadiya wedding preview](src/assets/images/shuhairandhadiya-preview.png)
+
 ## Features
 
 - Two-page invitation flow with a smooth animated transition
